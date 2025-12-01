@@ -203,14 +203,22 @@
     }
 
     #dataList_{{list.id}} .list-card-actions a {
-        color: #6b7280;
-        font-size: 16px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
         text-decoration: none;
-        transition: color 0.2s;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: none;
+        transition: background-color 0.2s;
+        display: inline-block;
+        white-space: nowrap;
     }
 
     #dataList_{{list.id}} .list-card-actions a:hover {
-        color: #1f2937;
+        background-color: #0056b3;
+        color: #ffffff;
     }
 
     .rowActions.d-flex {
@@ -220,14 +228,22 @@
     }
 
     .rowActions.d-flex > a {
-        color: #6b7280;
-        font-size: 16px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
         text-decoration: none;
-        transition: color 0.2s;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: none;
+        transition: background-color 0.2s;
+        display: inline-block;
+        white-space: nowrap;
     }
 
     .rowActions.d-flex > a:hover {
-        color: #1f2937;
+        background-color: #0056b3;
+        color: #ffffff;
     }
 
     @media (max-width: 767.98px) {
@@ -317,7 +333,11 @@
                             {{rowActions}}
                                 <div class="rowActions d-flex" data-cbuilder-sort-horizontal>{{rowAction}}</div>
                             {{rowActions}}
-                        <#elseif element.properties.actionsStyle! != 'bottomActions'>
+                        <#elseif element.properties.actionsStyle! == 'bottomActions'>
+                            {{rowActions}}
+                                <div class="rowActions d-flex" data-cbuilder-sort-horizontal>{{rowAction}}</div>
+                            {{rowActions}}
+                        <#else>
                             {{rowActions attr-class="dropdown-item"}}
                             <div class="dropdown">
                                 <a data-toggle="dropdown" class="text-muted" tabindex="0" style="cursor:pointer;">
