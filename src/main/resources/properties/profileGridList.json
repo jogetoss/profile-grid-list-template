@@ -1,0 +1,35 @@
+[
+    {
+        "title": "@@org.joget.marketplace.profilegrid.list.config@@",
+        "properties": [
+            {
+               "name":"actionsStyle",
+               "label":"@@org.joget.marketplace.profilegrid.list.actionsStyle@@",
+               "type":"selectbox",
+               "options":[
+                  {
+                    "value": "",
+                    "label": "@@org.joget.marketplace.profilegrid.list.dd@@"
+                  },   
+                  {
+                    "value":"normalActions",
+                    "label":"@@org.joget.marketplace.profilegrid.list.nb@@"
+                  },
+                  {
+                    "value":"bottomActions",
+                    "label":"@@org.joget.marketplace.profilegrid.list.bottom@@"
+                  },
+                  {
+                    "value":"swipeActions",
+                    "label":"@@org.joget.marketplace.profilegrid.list.swipe@@"
+                  }               ]
+            },
+            {
+                "name": "separator",
+                "label": "@@org.joget.marketplace.profilegrid.list.separator@@",
+                "type": "textfield",
+                "value": "-"
+            }
+        ]
+    }
+]
