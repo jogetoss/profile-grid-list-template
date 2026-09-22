@@ -1,6 +1,7 @@
 # Description
+Profile Grid is a custom DataList template plugin. Instead of rendering DataList results as a generic table, it displays each row as a profile card — showing an avatar, name, contact details, role/status badges, a flexible grid of additional fields, and row actions (edit, delete, view, etc.).
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+To setup and configure this plugin, please see the [documentation](https://kb.joget.org/jw/web/userview/jdocs/docs/marketplace/profile-grid-datalist-template).
 
 # Getting Help
 
